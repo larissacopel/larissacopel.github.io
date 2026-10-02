@@ -7,6 +7,8 @@ tech:
 repository: 
 ---
 
+## Project Description
+
 This project consists of a use case description of an e-commerce and the design of a Data Warehouse to meet their needs.
 
 ### Problem
@@ -50,33 +52,35 @@ erDiagram
     FCT_SALES ||--|| DIM_CLIENT : is_made_by
     FCT_SALES ||--|| DIM_GEO_LOCATION : is_made_in
     FCT_SALES {
-        string id_sale PK
-        string id_client FK
-        string id_geo_location FK
+        int    id_sale PK
+        int    id_client FK
+        int    id_geo_location FK
         date   date
         float  total_price
     }
     FCT_SALES_PRODUCTS ||--|| DIM_PRODUCTS : contains
     FCT_SALES_PRODUCTS {
-        string id_sales_products PK
-        string id_sale FK
-        string id_product FK
+        int    id_sales_products PK
+        int    id_sale FK
+        int    id_product FK
         float  product_cost
         float  selling_price
     }
     DIM_CLIENT {
-        string id_client PK
+        int    sk_clinet PK
+        int    id_client NK
         string name
         string type
     }
     DIM_GEO_LOCATION {
-        string id_geo_location PK
+        int    id_geo_location PK
         string city
         string region
         string state
     }
     DIM_PRODUCTS {
-        string id_product PK
+        int    sk_produto PK
+        int    id_product NK
         string name
         string category
         string subcategory
