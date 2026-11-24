@@ -33,6 +33,18 @@ plugins:
   - jekyll-remote-theme
 remote_theme: larissacopel/portfolio-theme
 
+collections:
+  articles:
+    output: true
+    permalink: /articles/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: page
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
