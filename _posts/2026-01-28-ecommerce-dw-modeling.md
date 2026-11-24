@@ -7,8 +7,6 @@ tech:
 repository: 
 ---
 
-## Project Description
-
 This project consists of a use case description of an e-commerce and the design of a Data Warehouse to meet their needs.
 
 ### Problem

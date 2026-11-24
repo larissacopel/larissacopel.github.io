@@ -1,13 +1,12 @@
 ---
 layout: project
 title: "Basic Web Application with ECS"
+excerpt:
 tech:
     - IAC
     - Terraform
 repository: https://github.com/larissacopel/ecs-web-application
 ---
-
-## Project Description
 
 This project creates a Web Application using the Amazon Web Services infrastructure.
 

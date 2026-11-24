@@ -25,7 +25,7 @@ permalink: /articles/
             </span>
 
             {%- if site.show_excerpts -%}
-                {{ article.excerpt }}
+                <p>{{ article.excerpt }}</p>
             {%- endif -%}
 
             <span class="project-post-learn-more">Learn more...</span>

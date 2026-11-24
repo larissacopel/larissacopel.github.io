@@ -16,7 +16,7 @@ permalink: /projects/
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             <span class="post-meta">{{ post.date | date: date_format }}</span>
             {%- if site.show_excerpts -%}
-                {{ post.excerpt }}
+                <p>{{ post.excerpt }}</p>
             {%- endif -%}
         </div>
     {%- endfor -%}
